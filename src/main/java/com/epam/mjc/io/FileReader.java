@@ -1,6 +1,5 @@
 package com.epam.mjc.io;
 
-import javax.imageio.IIOException;
 import java.io.*;
 
 
@@ -33,21 +32,6 @@ public class FileReader {
 // exception handling
         }
         return profile;
-    }
-
-    public static void test() {
-        String directory = System.getProperty("user.home");
-        String fileName = "sample.txt";
-        String absolutePath = directory + File.separator + fileName;
-// reading the content of file
-        try (FileInputStream fileInputStream = new FileInputStream(absolutePath)) {
-            int ch;
-            while ((ch = fileInputStream.read()) != -1) {
-                System.out.print((char) ch);
-            }
-        } catch (IOException e) {
-// exception handling
-        }
     }
 }
 

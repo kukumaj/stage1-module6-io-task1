@@ -81,4 +81,10 @@ public class Profile {
     public int hashCode() {
         return Objects.hash(getName(), getAge(), getEmail(), getPhone());
     }
+
+//    public static void main(String[] args) {
+//        Profile profile = new Profile("ok",2,"wp",767676767l);
+//        Profile profile2 = new Profile("ok",2,"wp",767676767l);
+//        System.out.println(profile2.equals(profile));
+//    }
 }
